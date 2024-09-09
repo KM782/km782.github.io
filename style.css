@@ -1,26 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-   font-family: Helvetica, Arial, sans-serif;
-   margin: 0px ;
+    font-family:  Helvetica, Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-h1{
-    margin:0px ;
-    padding:8px ;
-    font-family: "Fredoka One", sans-serif;
-    width: 16%; 
-    border-radius: 30%;
+/* Header Styling */
+header {
+    background-color: #ab7adb;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
-ul{
-    margin:0px ;
+header h1 {
+    font-size: 3rem;
+    font-family: "Fredoka One, sans-serif";
+    margin: 0px
+
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
 body > header {
-    background-color:orange;
+    background-color:#663399;
     display: flex;
-    height: 12vh;
+    height: 17vh;
     align-items: center;
-    justify-content: space-around ;
+    justify-content: space-evenly ;
     color: azure;
 }
 
@@ -31,6 +48,7 @@ body > header {
 #nav-ul > li { 
     padding: 8px;
     margin: 12px;
+    display: inline-block;
 }
 
 body > header > nav > ul {
@@ -46,39 +64,60 @@ body > header > nav > ul {
     border-radius: 10%;
 }
 
-body > main article {
-    width: 70%;
-    margin: auto;
+
+/* Recipe Section */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-#main-content {
-    display: flex;
+.recipe h2 {
+    font-size: 2rem;
+    color: #801fe0;
+    margin-bottom: 10px;
 }
 
-#main-content > div {
-    width: 70%;
-    justify-content: space-around;
+.recipe h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ab7adb;
 }
 
-form {
+.recipe ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.recipe ol {
+    margin-left: 20px;
+}
+
+.recipe ol li {
+    margin-bottom: 15px;
+}
+
+.recipe ol li strong {
+    color: #663399;
+}
+
+/* Footer Styling */
+footer {
     text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #cfa2fd;
+    font-size: 0.9rem;
 }
 
-h2 {
-    text-align:center ;
+footer p {
+    color: #555;
 }
-
-body > footer {
-    background-color: orange;
-    display: flex;
-}
-
-img {
-    border-radius:50%  ;
- }
-
- #footer-ul { 
-    display: flex;
+#footer-ul { 
     list-style: none;
  }
 
@@ -90,3 +129,18 @@ img {
     color: white;
     text-decoration: none;
  }
+
+ img {
+    border-radius:10%  ;
+    align-items: center;
+ }
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
